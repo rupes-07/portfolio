@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types */
 import { useState } from "react";
 import { Outlet } from "react-router-dom";
+import { Analytics } from "@vercel/analytics/react";
 
 import NavSection from "./components/NavSection";
 import Loading from "./components/Loading";
@@ -21,6 +22,7 @@ function App() {
       <Footer isdarkmode={isdarkmode} />
       {/* <ErrorDM /> */}
       <Loading />
+      <Analytics />
     </div>
   );
 }
